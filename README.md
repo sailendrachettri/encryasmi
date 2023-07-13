@@ -37,8 +37,8 @@ Start the Server
   
 # Features
 
-- Encryption and Decryption
-- WhatsApp integration
+- Message encryption and decryption
+- WhatsApp integration to send encrypted messages
 
 # Screenshots
 <p><img src="https://github.com/sailendrachettri/ency/blob/main/public/imgs/img1.png" alt="Front page"></p>

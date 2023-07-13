@@ -70,15 +70,9 @@ function Navbar(props) {
         // top loading bar progress
         props.setProgress(50);
         setTimeout(() => {
-            if (localStorage.getItem('token')) {
-                props.setProgress(100);
-                navigate('/encrydecry')
-            }
-            else {
-                props.setProgress(100);
-                navigate('/login')
-            }
-        }, 500);
+            props.setProgress(100)
+            navigate('/encrydecry')
+        }, 500)
 
     }
 
