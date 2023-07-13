@@ -8,11 +8,10 @@ The main objective of this application is to prevent unauthorized users from bei
 
 **Server:** Node JS, Express JS
 
-**Database:** Mongo DB
   
 ## Live Dome
 
-[will update soon!]
+https://encryasmi.netlify.app/
 
 ## Run Locally
 
@@ -30,30 +29,16 @@ Install dependencies
   npm install 
 ```
 
-```bash
-  cd backend
-  npm install
-```
-
 Start the Server
 
 ```bash
   npm run start
 ```
-
-Start the Backend
-```bash
-  //open now terminal
-  cd backend
-  npm start
-```
   
 # Features
 
-- Authenticaton
 - Encryption and Decryption
 - WhatsApp integration
-- Login and Signup - Hasing password
 
 # Screenshots
 <p><img src="https://github.com/sailendrachettri/ency/blob/main/public/imgs/img1.png" alt="Front page"></p>

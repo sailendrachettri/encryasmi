@@ -5,12 +5,12 @@ function Home(props) {
     // hooks
     const navigate = useNavigate();
 
-    const goToSignUp = () => {
+    const gotoHome = () => {
         // top loading bar progress
         props.setProgress(50);
         setTimeout(() => {
             props.setProgress(100);
-            navigate("/signup");
+            navigate("/encrydecry");
         }, 500);
     }
 
@@ -21,7 +21,7 @@ function Home(props) {
                     <div className="col-lg-5">
                         <h1>Send your messages in a more <strong> secured </strong> way</h1>
                         <p>Encryasmi is a web based application that hepls you to send encrypted messages.</p>
-                        <button type="button" className="btn btn-outline-primary" onClick={goToSignUp}>Get Started</button>
+                        <button type="button" className="btn btn-outline-primary" onClick={gotoHome}>Get Started</button>
                     </div>
                     <div className="col-lg-5">
                         <img src={process.env.PUBLIC_URL + "/imgs/bg.png"} className='landingPageImage animated' alt="Message social" />

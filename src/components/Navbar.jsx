@@ -55,22 +55,6 @@ function Navbar(props) {
     // hooks
     const navigate = useNavigate();
 
-    const gotoLogin = () => {
-        // top loading bar progress
-        props.setProgress(50);
-        setTimeout(() => {
-            props.setProgress(100);
-            navigate("/login");
-        }, 500)
-    }
-    const gotoSignup = () => {
-        // top loading bar progress
-        props.setProgress(50);
-        setTimeout(() => {
-            props.setProgress(100);
-            navigate("/signup");
-        }, 500)
-    }
 
     const goToHome = () => {
         // top loading bar progress
@@ -107,20 +91,6 @@ function Navbar(props) {
         }, 500);
     }
 
-    const logoutMethod = () => {
-        let displayUser = document.getElementById('displayUser');
-        displayUser.innerHTML = ""
-
-        props.setProgress(50)
-        setTimeout(() => {
-            props.setProgress(100)
-            localStorage.removeItem('token')
-            navigate('/login')
-        }, 500);
-
-        document.body.style.backgroundColor = white
-    }
-
     return (
         <>
             <nav className={`navbar navbar-expand-lg pt-0`} >
@@ -144,15 +114,6 @@ function Navbar(props) {
                             <input className="form-check-input boxBgColor" type="checkbox" role="switch" onClick={darkModeToggle} id="toggleDarkMode" />
                             <label className="form-check-label" htmlFor="toggleDarkMode">{btnText}</label>
                         </div> : ""}
-
-                        <span className='mx-3' id='displayUser'> </span>
-                        {/* ! "not login" ? "than show login/signup : "else show logout and username" */}
-                        {!localStorage.getItem('token') ? <form className="d-flex">
-                            <p className='btn btn-outline-primary mx-1' role='button' onClick={gotoLogin}>Login</p>
-                            <p className='btn btn-outline-primary mx-1' role='button' onClick={gotoSignup}>Signup</p>
-
-                        </form> : <button className='btn btn-outline-primary mx-1' onClick={logoutMethod}>Logout</button>}
-
                     </div>
                 </div>
             </nav >
