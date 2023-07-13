@@ -101,6 +101,9 @@ function Navbar(props) {
                             <li className="nav-item">
                                 <p className={`nav-link ${window.location.pathname === "/about" ? "active" : ""}`} role='button' onClick={goToAbout} style={bgmode}>Developer</p>
                             </li>
+                            <li className="nav-item">
+                                <a href="https://github.com/sailendrachettri/encryasmi/" target='_blank' rel="noreferrer" style={{ textDecoration: 'none' }}> <p className="nav-link active" role='button'>Code</p> </a>
+                            </li>
                         </ul>
 
                         {/* Toggle switch - dark mode and light mode */}
