@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500&display=swap');
+
+:root {
+    --fontFamilyVar: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--fontFamilyVar);
+    background-color: #e0dbfc;
+}
+
+.headerInfoColor {
+    color: #676a6d;
+}
+
+.active {
+    font-weight: 500;
+}
+
+.headerText {
+    text-shadow: 1px 1px 2px #f7f7f7, 0 0 1em #6161b9, 0 0 0.2em rgb(73, 73, 190);
+    font-family: 'Material Symbols Outlined', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.headerText2 {
+    text-shadow: 1px 1px 2px #f7f7f7, 0 0 1em #6161b9, 0 0 0.2em rgb(73, 73, 190);
+    font-family: var(--fontFamilyVar);
+}
+
+.logo {
+    text-shadow: 1px 1px 2px #f3f3f3, 0 0 1em #25257c, 0 0 0.2em blue;
+    font-family: cursive;
+    font-weight: 700;
+}
+
+#displayUser {
+    color: #424b58;
+    font-weight: 500;
+}
+
+.containerHeight75vh {
+    min-height: 75vh;
+}
+
+.boxBgColor {
+    background-color: #e0dbfc;
+    /* border: 1px solid #cecbdb; */
+    border: 1px solid #0d6efd;
+}
+
+.boxBgColor:focus {
+    outline: none !important;
+    border-color: none;
+    box-shadow: 0 0 10px #0d6efd;
+    background-color: #e0dbfc;
+}
+
+/* Google icons css */
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+/* landing page css */
+/* .landingPage {
+    width: 100vh;
+} */
+
+.landingPageImage {
+    height: 636px;
+    width: 546px;
+}
+
+.aboutMeImg {
+    height: 350px;
+    width: 330px;
+}
+
+.customHref {
+    color: #1470fd;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* about image animation */
+.animated {
+    overflow: hidden;
+    transform: translateY(0px);
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+footer {
+    background-color: #e0dbfc;
+}
